@@ -8,6 +8,8 @@ import '../data/my_data.dart';
 part 'weather_bloc_event.dart';
 part 'weather_bloc_state.dart';
 
+
+//weather bloc feature
 class WeatherBlocBloc extends Bloc<WeatherBlocEvent, WeatherBlocState> {
   WeatherBlocBloc() : super(WeatherBlocInitial()) {
     on<FetchWeather>((event, emit) async {
